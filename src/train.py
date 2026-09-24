@@ -28,10 +28,10 @@ print("confusion_matrix:",confusion, sep='\n')
 
 import os
 
-nested_path = "C:/Users/Holy/Documents/ITSwitch/iris-classifier/outputs/confusion"
+nested_path = "C:/Users/Holy/Documents/ITSwitch/iris-classifier/outputs"
 
 # exist_ok=True prevents errors if the path already exists
 os.makedirs(nested_path, exist_ok=True)
 
 disp = ConfusionMatrixDisplay(confusion_matrix=confusion)
-disp.plot().figure_.savefig('C:/Users/Holy/Documents/ITSwitch/iris-classifier/outputs/confusion/_matrix.png')
+disp.plot().figure_.savefig('C:/Users/Holy/Documents/ITSwitch/iris-classifier/outputs/confusion_matrix.png')
