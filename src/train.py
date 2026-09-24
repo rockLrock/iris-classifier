@@ -26,7 +26,10 @@ confusion = confusion_matrix(y_test, y_pred)
 print("confusion_matrix:",confusion, sep='\n')
 
 
-import os
+import os,joblib
+
+# Save the trained model
+joblib.dump(model, 'C:/Users/Holy/Documents/ITSwitch/iris-classifier/outputs/model.joblib')
 
 nested_path = "C:/Users/Holy/Documents/ITSwitch/iris-classifier/outputs"
 
